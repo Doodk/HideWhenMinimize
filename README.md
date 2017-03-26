@@ -10,7 +10,9 @@ If the target process is not found, the program will start the target process at
 
 
 command line argument: [-force | -hide]
+
 -force : end the old listener forcibly (if exist), re-attach the listener to the target process.
+
 -hide  : hide the target window after found.
 
 
