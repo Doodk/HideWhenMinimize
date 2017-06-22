@@ -36,4 +36,5 @@ MaxWait: [in second] the maximum wait(loop) time to look for the specific window
 WinName: to determine which window to be hide, it can be a partial name. If this tag is missing or blank, the program will look for the process' main window (may not be accurate).
 
 WinClass: to determine which window class will be looking for, used to narrow the range, makes the searching more accurate and faster.
+
 InfiniteLoop: [true/false] if it is true, it will constantly looking for the process and the WinName.
