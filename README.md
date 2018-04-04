@@ -2,11 +2,11 @@
 
 This project uses C# language.
 
-This program hides window into the taskbar when it is minimized. If the window has a tray icon, it will minimize to tray icon instead.
+This program hides the window into the taskbar when it is minimized. If the window has a tray icon, it will minimize to tray the icon instead.
 
 
-The project will setup a listener attatching to the target process, and it will quit after the target process quits.
-If the target process is not found, the project will start the target process at first (if have full path in setting file's Path tag).
+This program will setup a listener attatching to the target process, and it will quit after the target process quits.
+If the target process is not found, the project will start the target process firstly (if have full path in setting file's Path tag).
 
 
 command line argument: [-force | -hide]
@@ -30,12 +30,12 @@ File name: <HideWhenMinimize.xml>
 </Hook>
 ```
 Path: <MUST HAVE> full path for the process, or only the exe file name such as "wlmail.exe"
-      (If it is not the full path, the program will not start this process since it is not found.)
+      (If it is not the full path, the program will not start this process because it is not found.)
 
 MaxWait: [in second] the maximum wait(loop) time to look for the specific window's name after the process (from path tag) has been found.
 
 WinName: determines which window to be hidden. It can be a partial name. If this tag is missing or blank, the program will look for the process' main window (may not be accurate).
 
-WinClass: determines which window class will be looking for, uses to narrow the range, and makes the searching more accurate and faster.
+WinClass: determines which window class will be looking for, used to narrow the range, and makes the searching more accurate and faster.
 
-InfiniteLoop: [true/false] if it is true, it will constantly looking for the process and the WinName.
+InfiniteLoop: [true/false] if it is true, it will constantly look for the process and the WinName.
