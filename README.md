@@ -2,10 +2,10 @@
 
 This project uses C# language.
 
-This program hides the window into the taskbar when it is minimized. If the window has a tray icon, it will minimize to tray the icon instead.
+This program hides the window into the taskbar when it is minimized. When the tray icon exists, the window will minimize to tray the icon.
 
 
-This program will setup a listener attatching to the target process, and it will quit after the target process quits.
+Program setup will quit after the target process quits.
 If the target process is not found, the project will start the target process firstly (if have full path in setting file's Path tag).
 
 
